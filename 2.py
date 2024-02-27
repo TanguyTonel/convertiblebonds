@@ -42,7 +42,8 @@ risk_free_rate = 0.03
 
 list_bond_prices = []
 list_risk = []
-for i in range(1,10):
+dict_values = {}
+for i in range(max(0, risk_free_rate*100 - 3), min(100, ris_free_rate*100 + 3):
     risk_free_rate = i/100
     bond_price = convert_bond_price(stock_price, conversion_ratio, face_value, volatility, risk_free_rate, time_to_maturity)
     list_bond_prices.append(bond_price)
